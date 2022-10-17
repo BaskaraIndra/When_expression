@@ -46,14 +46,12 @@ fun main(){
 
     val anyType: Any = 100L
 
-    //Gunakan if ketika hanya menggunakan 2 situasi
     if(anyType is Long){
         println("The value is Long type")
     }else{
         println("The value is not Long type")
     }
 
-    //Gunakan when ketika menggunakan lebih dari 2 situasi
     when(anyType){
         is Long -> println("The value is Long type")
         is String -> println("The value is String type")
